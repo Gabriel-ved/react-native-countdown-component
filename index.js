@@ -135,7 +135,6 @@ class CountDown extends React.Component {
     return (
       <View style={[
         styles.digitCont,        
-        {width: size * 2.3, height: size * 2.6},
         digitStyle,
       ]}>
         <Text style={[
@@ -169,8 +168,8 @@ class CountDown extends React.Component {
       <View style={styles.doubleDigitCont}>
         <View style={styles.timeInnerCont}>
           {this.renderDigit(digits)}
+          {this.renderLabel(label)}
         </View>
-        {this.renderLabel(label)}
       </View>
     );
   };
